@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Doge Coin ($LDOGE) - Official Website & Portal</title>
+    <style>
+        :root {
+            --primary: #f3ba2f;
+            --bg-dark: #0b0e11;
+            --card-bg: #151a21;
+            --text-main: #ffffff;
+            --text-muted: #848e9c;
+            --accent: #22c55e;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+        header.site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: var(--card-bg);
+            border-bottom: 1px solid #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #151a21 0%, #0b0e11 100%);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 30px auto;
+        }
+        .btn-main {
+            background: var(--primary);
+            color: #000;
+            padding: 14px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: opacity 0.2s;
+        }
+        .btn-main:hover {
+            opacity: 0.9;
+        }
+        .section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--primary);
+        }
+        .tokenomics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .token-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #222;
+            text-align: center;
+        }
+        .token-card h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .token-card p {
+            color: var(--text-muted);
+        }
+        .roadmap-list {
+            list-style: none;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #222;
+        }
+        .roadmap-list li {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #222;
+        }
+        .roadmap-list li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .roadmap-list strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 5px;
+        }
+        .social-box {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .social-btn {
+            background: #1e252b;
+            color: var(--text-main);
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            border: 1px solid #333;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .social-btn:hover {
+            background: var(--primary);
+            color: #000;
+        }
+        .note-box {
+            background: rgba(243, 186, 47, 0.05);
+            border: 1px solid rgba(243, 186, 47, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--card-bg);
+            color: var(--text-muted);
+            border-top: 1px solid #222;
+            margin-top: 80px;
+        }
+        @media(max-width: 768px) {
+            header.site-header { padding: 15px 20px; }
+            .hero h1 { font-size: 2.2rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo">🐕 $LDOGE</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#whitepaper">Whitepaper</a></li>
+            <li><a href="https://t.me/Littledogecoinbot?start=Littledoge_coin" target="_blank" style="color: var(--primary);">Join Airdrop</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Little Doge Coin ($LDOGE)</h1>
+        <p>The ultimate community-driven meme coin. Officially deploying on the <strong>Base Blockchain</strong>, combining charity, active mining, and explosive growth.</p>
+        <a href="https://t.me/Littledogecoinbot?start=Littledoge_coin" target="_blank" class="btn-main">Launch Telegram Airdrop Bot</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2>About The Project & Base Blockchain</h2>
+        <div style="background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #222;">
+            <p style="margin-bottom: 15px; color: var(--text-muted);">Little Doge ($LDOGE) is engineered to redefine standard meme tokens. Built with a vision for fast transactions and low fees, $LDOGE is officially scheduled for deployment on the high-performance <strong>Base Blockchain</strong>.</p>
+            <p style="color: var(--text-muted);">While our Telegram Mini App drives massive community engagement and airdrop mining, our upcoming smart contract launch on Base, complete security audits, and professional DEX/CEX listings will set a new benchmark in crypto.</p>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section class="section" id="tokenomics">
+        <h2>Tokenomics (Total Supply: 1,000,000,000 $LDOGE)</h2>
+        <div class="tokenomics-grid">
+            <div class="token-card">
+                <h3>25%</h3>
+                <p>Community Airdrop & Mining Portal</p>
+            </div>
+            <div class="token-card">
+                <h3>40%</h3>
+                <p>DEX Liquidity Pool (Base Network)</p>
+            </div>
+            <div class="token-card">
+                <h3>20%</h3>
+                <p>Locked until CEX Listing</p>
+            </div>
+            <div class="token-card">
+                <h3>10%</h3>
+                <p>Charity Fund</p>
+            </div>
+            <div class="token-card" style="grid-column: span auto;">
+                <h3>5%</h3>
+                <p>Team (Locked 2 Years, Gradual Unlock Every 6 Months)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="section" id="roadmap">
+        <h2>Project Roadmap</h2>
+        <ul class="roadmap-list">
+            <li>
+                <strong>Phase 1: Foundation & Community Building (Current)</strong>
+                <span style="color: var(--text-muted);">Telegram Mini App launch, mining mechanics, community expansion, and massive airdrop distribution.</span>
+            </li>
+            <li>
+                <strong>Phase 2: Base Blockchain Deployment & Audits</strong>
+                <span style="color: var(--text-muted);">Smart contract deployment on the Base network, rigorous third-party security audits, and public contract release.</span>
+            </li>
+            <li>
+                <strong>Phase 3: DEX & CEX Listings</strong>
+                <span style="color: var(--text-muted);">Adding liquidity pools on decentralized exchanges on Base and scaling towards centralized exchange listings.</span>
+            </li>
+            <li>
+                <strong>Phase 4: Charity Initiatives & Global Expansion</strong>
+                <span style="color: var(--text-muted);">Deploying charity funds globally via littledogecharity.online vision and expanding ecosystem utility.</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Whitepaper Section -->
+    <section class="section" id="whitepaper">
+        <h2>Whitepaper & Documentation</h2>
+        <div style="background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #222;">
+            <p style="color: var(--text-muted); margin-bottom: 15px;"><strong>Overview:</strong> Little Doge Coin ($LDOGE) operates with a fixed total supply of 1 billion tokens. Our core architecture balances viral meme culture with real-world utility, charitable contributions, and decentralized governance.</p>
+            <p style="color: var(--text-muted); margin-bottom: 15px;"><strong>Deployment Vision:</strong> By leveraging the Base Blockchain, $LDOGE ensures seamless, lightning-fast scalability with minimal transaction overhead for holders worldwide.</p>
+            <p style="color: var(--text-muted);">Explore our complete ecosystem plans, security standards, and long-term roadmap directly through our community portals.</p>
+        </div>
+    </section>
+
+    <!-- Social & Community Section -->
+    <section class="section">
+        <h2>Official Links & Community</h2>
+        <div style="background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid #222; text-align: center;">
+            <p style="color: var(--text-muted); margin-bottom: 20px;">Join our official channels to stay updated with Base contract launches, listings, and airdrops.</p>
+            <div class="social-box">
+                <a href="https://t.me/Littledogecoinbot?start=Littledoge_coin" target="_blank" class="social-btn">🤖 Telegram Airdrop Bot</a>
+                <a href="https://t.me/Littledogecoinbot" target="_blank" class="social-btn">📢 Telegram Channel</a>
+                <a href="https://twitter.com" target="_blank" class="social-btn">🐦 Official X (Twitter)</a>
+            </div>
+
+            <div class="note-box">
+                <strong>Note on TON Wallet:</strong> The TON wallet connection feature inside our Telegram Mini App is strictly utilized for interacting with the Telegram ecosystem and airdrop rewards. It has no other external use cases.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Little Doge Coin ($LDOGE). All rights reserved.</p>
+        <p style="margin-top: 10px; font-size: 0.9rem;">littledogecharity.online</p>
+    </footer>
+
+</body>
+  </html>
+      
